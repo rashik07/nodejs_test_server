@@ -12,7 +12,7 @@ mongoose.connect(process.env.DATABASE_ECO,{useNewUrlParser:true, useUnifiedTopol
 })
 // console.log(process.env.DATABASE_ECO)
 // server
-const port = process.env.PORT || 8080;
+const port = process.env.PORT || 8081;
 
 app.listen(port, () => {
   console.log(`App is running on port ${port}`.yellow.bold);
