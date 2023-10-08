@@ -7,7 +7,7 @@ const passportInfoSchema = new mongoose.Schema({
   name: String,
   passport: String,
 
-  image: String,
+  downloadURL: String,
 });
 
 //   passportInfoSchema.index({ productId: 1, userId: 1 }, { unique: true });

@@ -1,10 +1,10 @@
 const PassportInfo = require("../modules/PassportInfo");
 
-exports.dataPostService = async ( image,name,passport) => {
+exports.dataPostService = async ( downloadURL,name,passport) => {
   // console.log(image);
   const PassportInfoItem = new PassportInfo({
 
-    image,name,passport
+    downloadURL,name,passport
   });
   const passportInfo = await PassportInfoItem.save();
   console.log(passportInfo);
